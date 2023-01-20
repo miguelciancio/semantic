@@ -24,6 +24,7 @@ nlp2 = spacy.load("en_core_web_sm")  # load spacy library
 #  variables that will be compared.
 tokens = nlp2 ("cat monkey banana")
 
+print("")
 # display results.
 for token1 in tokens:
     for token2 in tokens:
@@ -35,7 +36,7 @@ based on the tagger, parser and NER, which may not give useful similarity judgem
 small models, e.g. `en_core_web_sm`, which don't ship with word vectors and only use context-sensitive tensors. You can always add 
 your own word vectors, or use one of the larger models instead if available.
 
-It is not like didn't work, but gave me completelly different numbers. So, apparently it gives you a non-trustful values which is,
+It is not like didn't work, but gave me completely different numbers. So, apparently it gives you a untrusted values which is,
 in the end, useless.
 '''
 
